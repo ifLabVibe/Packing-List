@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-main {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px 16px 0 0;
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 1rem;
+    border-radius: 0;
+  }
+}

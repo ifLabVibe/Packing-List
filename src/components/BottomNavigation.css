@@ -1,0 +1,61 @@
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e0e6ed;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem 0;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #95a5a6;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.nav-tab:hover {
+  background: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.nav-tab.active {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.nav-tab svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 480px) {
+  .bottom-navigation {
+    padding: 0.5rem 0;
+  }
+
+  .nav-tab {
+    padding: 0.5rem;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .nav-tab svg {
+    width: 20px;
+    height: 20px;
+  }
+}

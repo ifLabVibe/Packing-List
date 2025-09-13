@@ -1,0 +1,166 @@
+.profile-page {
+  padding-bottom: 100px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 0 0 16px 16px;
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.settings-section {
+  padding: 0;
+  width: 100%;
+}
+
+.settings-group {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-group h3 {
+  background: #f8f9fa;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-info {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.setting-info h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.setting-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+.danger-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.danger-button:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.tip-list {
+  padding: 0;
+}
+
+.tip-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tip-item:last-child {
+  border-bottom: none;
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.tip-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.tip-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .setting-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .setting-info {
+    margin-right: 0;
+  }
+
+  .tip-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tip-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
